@@ -4,10 +4,9 @@ This is a minimal OpenGL project that uses vcpkg for dependency management. All 
 
 ## Requirements
 
-- **CMake** 3.10 or newer
+- [**CMake** 3.10 or newer](https://cmake.org/download/)
 - [vcpkg](https://github.com/microsoft/vcpkg)
-
-> **Note:** The configuration is set up by default for Windows, building with Visual Studio 2022.
+> **Note:** The configuration is set up by default for Windows, building with Visual Studio 2022. Without VS there may be additional steps required.
 
 
 ## Building the Project

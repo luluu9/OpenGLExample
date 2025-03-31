@@ -16,13 +16,19 @@ This is a minimal OpenGL project that uses vcpkg for dependency management. All 
 git clone https://github.com/luluu9/OpenGLExample.git
 cd OpenGLExample
 ```
-2. Configure the project using the preset:
+2. Set your path to vcpkg in `CMakeUserPresets.json`
+```json
+"environment": {
+    "VCPKG_ROOT": "<your_path_to_vcpkg_root>"
+}
+```
+3. Configure the project using the preset:
 ```bash
 mkdir build 
 cd build
-cmake --preset=vs2022 ..
+cmake --preset=default ..
 ```
-3. Build the project:
+4. Build the project:
 ```bash
 cmake --build .
 ```

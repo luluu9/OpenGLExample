@@ -19,7 +19,9 @@ cd OpenGLExample
 ```
 2. Configure the project using the preset:
 ```bash
-cmake --preset=default ..
+mkdir build 
+cd build
+cmake --preset=vs2022 ..
 ```
 3. Build the project:
 ```bash

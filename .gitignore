@@ -36,3 +36,4 @@ build/
 .vs/
 CMakeUserPresets.json
 .vscode/
+imgui.ini

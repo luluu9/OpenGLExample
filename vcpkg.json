@@ -2,13 +2,16 @@
   "dependencies": [
     "glew",
     "glfw3",
+    "glm",
     {
       "name": "imgui",
       "default-features": false,
       "features": [
-        "opengl3-binding",
-        "glfw-binding"
+        "glfw-binding",
+        "opengl3-binding"
       ]
-    }
+    },
+    "stb",
+    "nlohmann-json"
   ]
 }

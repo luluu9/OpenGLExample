@@ -3,9 +3,9 @@
 #include <map>
 #include <memory>
 #include <string>
-#include "Shader.h"
-#include "Model.h"
-#include "Texture.h"
+#include <core/Shader.h>
+#include <core/Model.h>
+#include <core/Texture.h>
 
 class ResourceManager {
 public:

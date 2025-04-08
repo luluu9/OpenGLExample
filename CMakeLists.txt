@@ -12,20 +12,20 @@ find_package(nlohmann_json CONFIG REQUIRED)
 
 # Add the executable
 add_executable(OpenGLExample
-    src/main.cpp
-    src/Application.cpp
-    src/Camera.cpp
-    src/GLFWWindow.cpp
-    src/InputManager.cpp
-    src/Light.cpp
-    src/Mesh.cpp
-    src/Model.cpp
-    src/OpenGLRenderer.cpp
-    src/ResourceManager.cpp
-    src/Scene.cpp
-    src/Texture.cpp
-    src/UIManager.cpp
-    src/GLShader.cpp
+    src/core/main.cpp
+    src/core/Application.cpp
+    src/core/Camera.cpp
+    src/rendering/GLFWWindow.cpp
+    src/input/InputManager.cpp
+    src/core/Light.cpp
+    src/core/Mesh.cpp
+    src/core/Model.cpp
+    src/rendering/OpenGLRenderer.cpp
+    src/core/ResourceManager.cpp
+    src/scene/Scene.cpp
+    src/core/Texture.cpp
+    src/ui/UIManager.cpp
+    src/rendering/GLShader.cpp
 )
 
 add_custom_command(TARGET OpenGLExample POST_BUILD
@@ -35,7 +35,10 @@ add_custom_command(TARGET OpenGLExample POST_BUILD
 )
 
 # Add the include directories
-target_include_directories(OpenGLExample PRIVATE ${Stb_INCLUDE_DIR})
+target_include_directories(OpenGLExample PRIVATE
+    ${Stb_INCLUDE_DIR}
+    ${CMAKE_SOURCE_DIR}/src
+)
 
 # Link the libraries
 target_link_libraries(OpenGLExample PRIVATE glfw)

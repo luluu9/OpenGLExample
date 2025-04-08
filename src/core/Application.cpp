@@ -1,6 +1,6 @@
-#include "Application.h"
-#include "OpenGLRenderer.h"
-#include "GLFWWindow.h"
+#include <core/Application.h>
+#include <rendering/OpenGLRenderer.h>
+#include <rendering/GLFWWindow.h>
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>

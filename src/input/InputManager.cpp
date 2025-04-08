@@ -1,4 +1,4 @@
-#include "InputManager.h"
+#include <input/InputManager.h>
 #include <GLFW/glfw3.h>
 
 void InputManager::processInput(GLFWwindow* window) {

@@ -1,5 +1,5 @@
-#include "Model.h"
-#include "Shader.h"
+#include <core/Model.h>
+#include <core/Shader.h>
 
 void Model::draw(Shader& shader) {
     for (auto& mesh : meshes) {

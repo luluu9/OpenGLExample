@@ -3,10 +3,10 @@
 #include <vector>
 #include <memory>
 #include <string>
-#include "Model.h"
-#include "Light.h"
-#include "Camera.h"
-#include "Shader.h"
+#include <core/Model.h>
+#include <core/Light.h>
+#include <core/Camera.h>
+#include <core/Shader.h>
 
 class Scene {
 public:

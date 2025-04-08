@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Renderer.h"
+#include <rendering/Renderer.h>
 
 class OpenGLRenderer : public Renderer {
 public:

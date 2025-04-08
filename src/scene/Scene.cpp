@@ -1,4 +1,4 @@
-#include "Scene.h"
+#include <scene/Scene.h>
 #include <fstream>
 #include <nlohmann/json.hpp>
 

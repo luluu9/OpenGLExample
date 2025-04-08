@@ -1,4 +1,4 @@
-#include "Light.h"
+#include <core/Light.h>
 
 Light::Light(const glm::vec3& position, const glm::vec3& color, float intensity)
     : position(position), color(color), intensity(intensity) {}

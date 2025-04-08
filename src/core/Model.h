@@ -3,8 +3,8 @@
 #include <vector>
 #include <string>
 #include <glm/glm.hpp>
-#include "Mesh.h"
-#include "Texture.h"
+#include <core/Mesh.h>
+#include <core/Texture.h>
 
 struct MeshData {
     std::vector<Vertex> vertices;

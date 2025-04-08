@@ -1,12 +1,12 @@
 #pragma once
 
 #include <memory>
-#include "Renderer.h"
-#include "Scene.h"
-#include "Window.h"
-#include "InputManager.h"
-#include "UIManager.h"
-#include "ResourceManager.h"
+#include <rendering/Renderer.h>
+#include <scene/Scene.h>
+#include <core/Window.h>
+#include <input/InputManager.h>
+#include <ui/UIManager.h>
+#include <core/ResourceManager.h>
 
 class Application {
 public:

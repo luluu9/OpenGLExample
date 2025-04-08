@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Shader.h"
+#include <core/Shader.h>
 #include <GL/glew.h>
 #include <unordered_map>
 #include <string>

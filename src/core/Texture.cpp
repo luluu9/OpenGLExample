@@ -1,4 +1,4 @@
-#include "Texture.h"
+#include <core/Texture.h>
 #include <GL/glew.h>
 #include <iostream>
 

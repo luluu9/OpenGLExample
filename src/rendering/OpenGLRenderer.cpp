@@ -1,6 +1,6 @@
-#include "OpenGLRenderer.h"
-#include "GLShader.h"
-#include "Model.h"
+#include <rendering/OpenGLRenderer.h>
+#include <rendering/GLShader.h>
+#include <core/Model.h>
 
 void OpenGLRenderer::render(const Scene& scene) {
     for (const auto& model : scene.getObjects()) {

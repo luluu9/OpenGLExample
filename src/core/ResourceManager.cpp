@@ -1,7 +1,7 @@
-#include "ResourceManager.h"
-#include "GLShader.h"
-#include "Model.h"
-#include "Texture.h"
+#include <core/ResourceManager.h>
+#include <rendering/GLShader.h>
+#include <core/Model.h>
+#include <core/Texture.h>
 #include <fstream>
 
 void ResourceManager::loadResources() {

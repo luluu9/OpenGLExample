@@ -1,6 +1,6 @@
 #include <stdexcept>
 #include <GL/glew.h>
-#include "GLFWWindow.h"
+#include <rendering/GLFWWindow.h>
 
 GLFWWindow::GLFWWindow(int width, int height, const char* title) {
     if (!glfwInit()) {
@@ -44,4 +44,3 @@ void GLFWWindow::clear() {
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
-

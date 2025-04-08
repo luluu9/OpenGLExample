@@ -33,6 +33,7 @@
 
 # Custom
 build/
+build-ninja/
 .vs/
 CMakeUserPresets.json
 .vscode/

@@ -1,7 +1,10 @@
 #include <core/Application.h>
-#include <rendering/OpenGLRenderer.h>
-#include <rendering/GLFWWindow.h>
-#include <rendering/OpenGLResourceLoader.h>
+#include <core/ResourceManager.h>
+#include <rendering/opengl/GLFWWindow.h>
+#include <rendering/opengl/OpenGLRenderer.h>
+#include <rendering/opengl/OpenGLResourceLoader.h>
+#include <input/InputManager.h>
+#include <ui/UIManager.h>
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>

@@ -1,5 +1,6 @@
-#include <rendering/OpenGLRenderer.h>
-#include <rendering/GLShader.h>
+#include "OpenGLRenderer.h"
+#include "GLShader.h"
+#include <scene/Scene.h>
 #include <core/Model.h>
 
 void OpenGLRenderer::render(const Scene& scene) {

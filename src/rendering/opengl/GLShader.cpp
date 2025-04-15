@@ -1,4 +1,4 @@
-#include <rendering/GLShader.h>
+#include "GLShader.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>

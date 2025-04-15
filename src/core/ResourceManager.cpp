@@ -1,5 +1,5 @@
 #include <core/ResourceManager.h>
-#include <rendering/GLShader.h>
+#include <rendering/opengl/GLShader.h>
 #include <core/Model.h>
 #include <core/Texture.h>
 #include <fstream>

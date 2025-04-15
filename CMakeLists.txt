@@ -15,20 +15,20 @@ add_executable(OpenGLExample
     src/core/main.cpp
     src/core/Application.cpp
     src/core/Camera.cpp
-    src/rendering/GLFWWindow.cpp
+    src/rendering/opengl/GLFWWindow.cpp
     src/input/InputManager.cpp
     src/core/Light.cpp
     src/core/Mesh.cpp
     src/core/Model.cpp
-    src/rendering/OpenGLRenderer.cpp
     src/core/ResourceManager.cpp
     src/scene/Scene.cpp
     src/core/Texture.cpp
     src/ui/UIManager.cpp
-    src/rendering/GLShader.cpp
-    src/rendering/GLTexture.cpp
-    src/rendering/GLModel.cpp
-    src/rendering/OpenGLResourceLoader.cpp
+    src/rendering/opengl/GLShader.cpp
+    src/rendering/opengl/GLTexture.cpp
+    src/rendering/opengl/GLModel.cpp
+    src/rendering/opengl/OpenGLResourceLoader.cpp
+    src/rendering/opengl/OpenGLRenderer.cpp
     src/rendering/utils/stb_impl.cpp
 )
 

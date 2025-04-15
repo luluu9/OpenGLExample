@@ -1,6 +1,6 @@
 #include <stdexcept>
 #include <GL/glew.h>
-#include <rendering/GLFWWindow.h>
+#include "GLFWWindow.h"
 
 GLFWWindow::GLFWWindow(int width, int height, const char* title) {
     if (!glfwInit()) {

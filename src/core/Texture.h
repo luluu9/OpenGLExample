@@ -4,9 +4,10 @@
 
 class Texture {
 public:
-    Texture(const std::string& path);
-    void bind() const;
+    virtual ~Texture() = default;
+    virtual void load(const std::string& path) = 0;
+    virtual void bind() const;
 
-private:
-    unsigned int textureID;
+protected:
+    unsigned int textureID = 0;
 };

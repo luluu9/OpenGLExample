@@ -4,10 +4,16 @@
 #include <core/Texture.h>
 #include <fstream>
 
+ResourceManager::ResourceManager(std::unique_ptr<ResourceLoader> loader)
+    : resourceLoader(std::move(loader)) {}
+
 void ResourceManager::loadResources() {
     // Load shaders
-    shaders["default"] = std::make_unique<GLShader>();
-    shaders["default"]->compile(loadStringFile("res/shaders/default.vert"), loadStringFile("res/shaders/default.frag"));
+    shaders["default"] = resourceLoader->createShader();
+    shaders["default"]->compile(
+        loadStringFile("res/shaders/default.vert"),
+        loadStringFile("res/shaders/default.frag")
+    );
 
     // Load models
     MeshData cubeData = {
@@ -32,11 +38,12 @@ void ResourceManager::loadResources() {
             0, 1, 2,
         }
     };
-    models["cube"] = std::make_unique<Model>();
+    models["cube"] = resourceLoader->createModel();
     models["cube"]->loadMesh(cubeData);
 
     // Load textures
-    textures["default"] = std::make_unique<Texture>("res/textures/default.png");
+    textures["default"] = resourceLoader->createTexture();
+    textures["default"]->load("res/textures/default.png");
 }
 
 Shader* ResourceManager::getShader(const std::string& name) {

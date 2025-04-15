@@ -26,6 +26,10 @@ add_executable(OpenGLExample
     src/core/Texture.cpp
     src/ui/UIManager.cpp
     src/rendering/GLShader.cpp
+    src/rendering/GLTexture.cpp
+    src/rendering/GLModel.cpp
+    src/rendering/OpenGLResourceLoader.cpp
+    src/rendering/utils/stb_impl.cpp
 )
 
 add_custom_command(TARGET OpenGLExample POST_BUILD

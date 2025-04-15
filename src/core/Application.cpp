@@ -1,6 +1,7 @@
 #include <core/Application.h>
 #include <rendering/OpenGLRenderer.h>
 #include <rendering/GLFWWindow.h>
+#include <rendering/OpenGLResourceLoader.h>
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
@@ -19,7 +20,8 @@ void Application::run() {
     scene = std::make_unique<Scene>();
     inputManager = std::make_unique<InputManager>();
     uiManager = std::make_unique<UIManager>();
-    resourceManager = std::make_unique<ResourceManager>();
+    auto resourceLoader = std::make_unique<OpenGLResourceLoader>();
+    resourceManager = std::make_unique<ResourceManager>(std::move(resourceLoader));
     resourceManager->loadResources();
 
     while (!window->shouldClose()) {

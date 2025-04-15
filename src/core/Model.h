@@ -14,7 +14,7 @@ struct MeshData {
 class Model {
 public:
     void draw(class Shader& shader);
-    void loadMesh(const MeshData& data);
+    virtual void loadMesh(const MeshData& data);
 
     std::string getName() const;
     glm::vec3 getPosition() const;
